@@ -77,7 +77,7 @@ if __name__ == '__main__':
     # 模型训练同时保存最优的模型
     #model2.run()
 
-    param3 = np.array([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,50,7,1,226,83,0.108120672,1])  # 注意这里将drop_out_rate设置为0，这样更优
+    param3 = np.array([1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,50,7,1,226,83,0.108120672,1])  
     X_train3, X_test3 = X_train[:, :, param3[:total_num_features] == 1], X_test[:, :, param3[:total_num_features] == 1]
     # 转换类型
     param3 = param3.tolist()
